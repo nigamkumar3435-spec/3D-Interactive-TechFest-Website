@@ -2,7 +2,7 @@
 
 import { Canvas } from '@react-three/fiber';
 import { Suspense, ReactNode } from 'react';
-import { ScrollControls } from '@react-three/drei';
+import { ScrollControls, OrbitControls } from '@react-three/drei';
 import PostProcessingEffects from './PostProcessingEffects';
 import CameraRig from './CameraRig';
 
@@ -37,6 +37,15 @@ export default function SceneContext({ children }: SceneContextProps) {
           </Suspense>
           <CameraRig />
         </ScrollControls>
+
+        {/* Allow user to look around */}
+        <OrbitControls 
+          enableZoom={false} 
+          enablePan={false}
+          maxPolarAngle={Math.PI / 1.5}
+          minPolarAngle={Math.PI / 3}
+          makeDefault 
+        />
 
         {/* Post Processing */}
         <PostProcessingEffects />
