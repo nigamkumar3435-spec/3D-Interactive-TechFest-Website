@@ -65,8 +65,12 @@ html.lenis {
 
 /* Hide scrollbars globally */
 ::-webkit-scrollbar {
-  display: none;
+  width: 0px !important;
+  height: 0px !important;
+  display: none !important;
+  background: transparent !important;
 }
 * {
-  scrollbar-width: none;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
 }
