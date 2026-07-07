@@ -65,21 +65,22 @@ html.lenis {
 
 /* Custom Theme Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 12px !important;
+  height: 12px !important;
+  display: block !important;
 }
 ::-webkit-scrollbar-track {
-  background: var(--background);
-  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--background) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.4) !important;
+  border-radius: 6px !important;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff0000;
+  background: #ff0000 !important;
 }
 * {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.2) var(--background);
+  scrollbar-width: auto !important;
+  scrollbar-color: rgba(255, 255, 255, 0.4) var(--background) !important;
 }
