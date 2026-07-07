@@ -1,74 +1,36 @@
-# Techfest IIT Bombay | Campus Ambassador Landing Page (Cyborg Themed)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A futuristic, cyborg-themed landing page designed for the **Techfest IIT Bombay Campus Ambassador** program. This project features a modern, neon-infused aesthetic with interactive elements to attract and engage student ambassadors from across the country.
+## Getting Started
 
-## 🚀 Features
+First, run the development server:
 
-- **Futuristic Cyborg Theme**: Immersive dark mode design featuring neon glowing text, stylized UI elements, and a dynamic "Gun Bot" companion.
-- **Interactive UI**:
-  - Clickable "Trailers" section with dynamic active states.
-  - One-click referral code copy functionality.
-  - Interactive FAQ accordion for easy navigation.
-- **Responsive Layout**: Designed to look great on all screen sizes, from mobile to desktop.
-- **Smooth Animations**: Includes floating animations for characters, pulse effects for buttons, and glow effects for certificates and documents.
-- **Performance Optimized**: Built with vanilla web technologies and bundled with Vite for lightning-fast development and optimized production builds.
-
-## 🛠️ Technology Stack
-
-- **HTML5**: Semantic structure and layout.
-- **CSS3**: Vanilla CSS utilizing custom properties (variables), Flexbox, CSS Grid, and keyframe animations.
-- **JavaScript (ES6+)**: Modular Vanilla JS for interactive components and DOM manipulation.
-- **Vite**: Next-generation frontend tooling for fast development server and optimized build process.
-
-## 📦 Project Structure
-
-```
-├── index.html          # Main HTML structure
-├── style.css           # Core styling, neon effects, animations, and responsive rules
-├── main.js             # JavaScript logic for interactivity (FAQ, trailers, etc.)
-├── package.json        # Project metadata and npm scripts
-├── public/             # Static assets (images like cyborg_new.png, gun_bot.png)
-└── node_modules/       # Project dependencies
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## 💻 Running Locally
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To run this project on your local machine, follow these steps:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/nigamkumar3435-spec/Cyborg-Themed-Landing-Page-Task1.git
-   cd Cyborg-Themed-Landing-Page-Task1
-   ```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-2. **Install dependencies:**
-   Make sure you have [Node.js](https://nodejs.org/) installed, then run:
-   ```bash
-   npm install
-   ```
+## Learn More
 
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-   Open the provided local URL (usually `http://localhost:5173`) in your browser to view the page.
+To learn more about Next.js, take a look at the following resources:
 
-4. **Build for production:**
-   ```bash
-   npm run build
-   ```
-   This will generate an optimized build in the `dist` folder.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 🤝 Contributing
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
+## Deploy on Vercel
 
-## 📜 License
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-This project is created as Task 1 for the Techfest IIT Bombay.
-
-## 🙏 Acknowledgements
-
-- Thanks to **IIT Bombay** and the **Techfest Team** for providing this engaging task.
-- Inspiration drawn from futuristic, cyberpunk, and cyborg themes.
-- Special thanks to the open-source community for the fonts and icons used in this project.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
