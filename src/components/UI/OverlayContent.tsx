@@ -9,23 +9,52 @@ export default function OverlayContent() {
   const sections = [
     {
       id: 0,
-      title: "TECHFEST 2027",
-      subtitle: "Enter the Future. Build the Impossible.",
-      buttons: ["Explore", "Register", "Watch Trailer"]
+      title: "COLLEGE AMBASSADOR",
+      subtitle: "A Premier Internship Opportunity by IIT Bombay.",
+      buttons: ["Register Now", "Learn More", "Log In"]
     },
     {
       id: 1,
-      title: "SYSTEM AWAKENING",
-      subtitle: "The AI Core is online.",
-      text: "About TechFest | Mission | Vision | Innovation"
+      title: "THE MISSION",
+      subtitle: "Represent your college on a global stage.",
+      text: "Build Interpersonal Skills | Expand Network | Explore Technology"
     },
     {
       id: 2,
-      title: "RESEARCH LAB",
-      subtitle: "Pushing the boundaries of technology.",
-      text: "AI | ML | Robotics | IoT | Quantum"
+      title: "YOUR MISSION DIRECTIVES",
+      subtitle: "What it takes to be a CA.",
+      text: "Promote Events | Conduct Workshops | Refer Students | Organize Zonals"
     },
-    // Add up to 9 sections as per the plan
+    {
+      id: 3,
+      title: "INCENTIVES & REWARDS",
+      subtitle: "Unlock exclusive benefits.",
+      text: "IIT Bombay Certificates | Techfest Offer Letters | Top Internships"
+    },
+    {
+      id: 4,
+      title: "EXCLUSIVE ACCESS",
+      subtitle: "Experience the ultimate fest.",
+      text: "Mood Indigo Concert Passes | ProShows | Free Merchandise | VIP Speaker Sessions"
+    },
+    {
+      id: 5,
+      title: "DATA VAULT",
+      subtitle: "Our Past Sponsors & Partners.",
+      text: "Google | Microsoft | Amazon | IBM | Intel"
+    },
+    {
+      id: 6,
+      title: "NEURAL NETWORK",
+      subtitle: "Join the largest network of students.",
+      text: "2500+ Colleges | 10,000+ Ambassadors | Global Reach"
+    },
+    {
+      id: 7,
+      title: "INITIALIZE REGISTRATION",
+      subtitle: "Your journey starts here.",
+      buttons: ["Begin Registration", "View Leaderboard"]
+    }
   ];
 
   const content = sections.find(s => s.id === currentSection) || sections[0];

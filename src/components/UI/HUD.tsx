@@ -12,9 +12,9 @@ export default function HUD() {
       <header className="flex justify-between items-start">
         <div className="pointer-events-auto">
           <h1 className="text-2xl font-bold tracking-[0.2em] text-[#ff0000] drop-shadow-[0_0_10px_rgba(255,0,0,0.8)]">
-            TECHFEST<span className="text-white">2027</span>
+            TECHFEST<span className="text-white"> CA PROGRAM</span>
           </h1>
-          <p className="text-xs uppercase tracking-widest mt-1 text-gray-400">Rise of the AI</p>
+          <p className="text-xs uppercase tracking-widest mt-1 text-gray-400">Internship & Ambassadorship</p>
         </div>
         
         <button 
