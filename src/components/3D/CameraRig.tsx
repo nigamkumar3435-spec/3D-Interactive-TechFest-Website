@@ -25,6 +25,13 @@ export default function CameraRig() {
     // Smoothly damp the camera position
     state.camera.position.z = THREE.MathUtils.lerp(state.camera.position.z, targetZ, delta * 2);
     state.camera.position.y = THREE.MathUtils.lerp(state.camera.position.y, targetY, delta * 2);
+
+    // Parallax effect with mouse
+    const mouseX = (state.pointer.x * Math.PI) / 10;
+    const mouseY = (state.pointer.y * Math.PI) / 10;
+    
+    state.camera.rotation.y = THREE.MathUtils.lerp(state.camera.rotation.y, -mouseX * 0.2, delta * 2);
+    state.camera.rotation.x = THREE.MathUtils.lerp(state.camera.rotation.x, mouseY * 0.2, delta * 2);
   });
 
   return null;
