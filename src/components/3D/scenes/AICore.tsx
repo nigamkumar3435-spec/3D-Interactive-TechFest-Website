@@ -4,7 +4,9 @@ import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
-export default function AICore() {
+import { GroupProps } from '@react-three/fiber';
+
+export default function AICore(props: GroupProps) {
   const coreRef = useRef<THREE.Group>(null);
   const eyeRef = useRef<THREE.Mesh>(null);
   const ringRef = useRef<THREE.Mesh>(null);
@@ -26,7 +28,7 @@ export default function AICore() {
   });
 
   return (
-    <group ref={coreRef} position={[0, 0, 0]}>
+    <group ref={coreRef} position={[0, 0, 0]} {...props}>
       {/* Central Sphere */}
       <mesh>
         <sphereGeometry args={[2, 64, 64]} />

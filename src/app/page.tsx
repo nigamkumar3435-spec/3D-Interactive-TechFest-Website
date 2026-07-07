@@ -29,6 +29,8 @@ export default function Home() {
         <AndroidGallery />
         <DataVault />
         <NeuralNetwork />
+        {/* Loop back to start for the final section */}
+        <AICore position={[0, 0, -140]} />
       </SceneContext>
 
       {/* HTML Overlay for text synced with sections */}
