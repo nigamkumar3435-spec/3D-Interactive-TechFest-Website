@@ -62,3 +62,11 @@ html.lenis {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* Hide scrollbars globally */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+}
