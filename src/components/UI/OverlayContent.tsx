@@ -75,7 +75,7 @@ export default function OverlayContent() {
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           exit={{ opacity: 0, y: -50, filter: 'blur(10px)' }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-2xl text-center pointer-events-auto"
+          className="max-w-2xl text-center pointer-events-none"
         >
           <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-4 text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">
             {content.title}
@@ -98,7 +98,7 @@ export default function OverlayContent() {
                   href={btn.link}
                   target={btn.link.startsWith('http') ? '_blank' : '_self'}
                   rel="noopener noreferrer"
-                  className={`px-8 py-3 uppercase tracking-widest text-sm font-semibold transition-all duration-300 border block ${
+                  className={`px-8 py-3 uppercase tracking-widest text-sm font-semibold transition-all duration-300 border block pointer-events-auto ${
                     i === 0 
                       ? 'bg-[#ff0000] border-[#ff0000] text-black hover:bg-white hover:border-white shadow-[0_0_20px_rgba(255,0,0,0.5)]' 
                       : 'bg-transparent border-gray-700 hover:border-white hover:bg-white/5'
